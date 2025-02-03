@@ -9,13 +9,13 @@ import ProtectedRoute from "./ProtectedRoute";
 
 function AppLayout() {
   const { isAuthenticated } = useAuth();
-  // const navigate = useNavigate();
-  // useEffect(
-  //   function () {
-  //     if (!isAuthenticated) navigate("/login");
-  //   },
-  //   [isAuthenticated]
-  // );
+  const navigate = useNavigate();
+  useEffect(
+    function () {
+      if (!isAuthenticated) navigate("/login");
+    },
+    [isAuthenticated, navigate]
+  );
 
   return (
     <div className={styles.app}>
