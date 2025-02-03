@@ -12,7 +12,7 @@ function AppLayout() {
   const navigate = useNavigate();
   useEffect(
     function () {
-      if (!isAuthenticated) navigate("/");
+      if (!isAuthenticated) navigate("/login");
     },
     [isAuthenticated, navigate]
   );
