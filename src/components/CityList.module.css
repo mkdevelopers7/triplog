@@ -12,7 +12,7 @@
 }
 
 .cityList::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 .cityList::-webkit-scrollbar-thumb {
