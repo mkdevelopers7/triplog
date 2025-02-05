@@ -4,6 +4,7 @@
   list-style: none;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-right: 6px;
 
   display: flex;
   flex-direction: column;
@@ -11,5 +12,14 @@
 }
 
 .cityList::-webkit-scrollbar {
-  width: 0;
+  width: 8px;
+}
+
+.cityList::-webkit-scrollbar-thumb {
+  background-color: #42484d;
+  border-radius: 10px;
+}
+
+.cityList::-webkit-scrollbar-track {
+  background-color: var(--color-dark--1);
 }
